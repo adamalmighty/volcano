@@ -27,6 +27,7 @@ Clone the repository:
 bash:-
 git clone https://github.com/adamalmighty/volcano.git
 cd volcano
+
 Install dependencies:
 
 bash:-
@@ -41,7 +42,6 @@ bash:-
 
 or
 
-bash:-
 python app.py
 Note: On most systems, you may need to make app.py executable first:
 
