@@ -25,12 +25,15 @@ Python 3.7 or higher
 Clone the repository:
 
 bash:-
+
 git clone https://github.com/adamalmighty/volcano.git
+
 cd volcano
 
 Install dependencies:
 
 bash:-
+
 pip install -r requirements.txt
 
 [Usage]
@@ -38,14 +41,17 @@ pip install -r requirements.txt
 Run the tool:
 
 bash:-
+
 ./app.py
 
 or
 
 python app.py
+
 Note: On most systems, you may need to make app.py executable first:
 
 bash:-
+
 chmod +x app.py
 
 [Compatibility]
