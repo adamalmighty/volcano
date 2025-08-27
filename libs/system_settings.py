@@ -1,4 +1,4 @@
-#libs/system.settings.py
+#libs/system_settings.py
 
 from rich.console import Console
 from rich.prompt import Prompt
