@@ -70,8 +70,8 @@ class VolcanoApp:
             justify="center"
         )
         welcome_message = Text.from_markup(
-            "\n[bold bright_red]Welcome to Volcano - A customised penetration testing terminal[/bold bright_red]\n"
-            "[bold yellow]A powerful, modular tool crafted for Arch Linux enthusiasts and security professionals.[/bold yellow]",
+            "\n[bold bright_red]Welcome to Volcano – Your Customized Penetration Testing Terminal[/bold bright_red]\n"
+            "[bold yellow]A robust, modular platform designed for security professionals and penetration testers, with cross-platform support.[/bold yellow]",
             justify="center"
         )
         panel_content = Text(justify="center")
@@ -100,6 +100,7 @@ class VolcanoApp:
         self.console.print(menu_text)
 
     def display_help(self):
+        self._clear_screen()
         help_text = """
 [bold green]Volcano Help:[/bold green]
 
@@ -145,6 +146,7 @@ class VolcanoApp:
             elif option.lower() == "h":
                 self.display_help()
             else:
+                self._clear_screen()
                 self.console.print("[bold red]Invalid option. Please try again.[/bold red]")
         except Exception as e:
             self.console.print(f"[bold red]Error running module: {e}[/bold red]")
@@ -166,6 +168,7 @@ class VolcanoApp:
                 self.display_menu()
                 choice = Prompt.ask("[bold yellow]Enter your choice[/bold yellow] [bold cyan](0-9, h)[/bold cyan]")
                 if choice not in valid_options:
+                    self._clear_screen()
                     self.console.print("[bold red]Invalid input! Please enter a number from 0 to 9 or 'h' for help.[/bold red]")
                     continue
                 running = self.handle_option(choice)

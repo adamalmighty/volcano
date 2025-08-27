@@ -7,6 +7,9 @@ import os
 class FileHacking:
     def __init__(self):
         self.console = Console()
+
+    def _clear_screen(self):
+        os.system("cls" if os.name == "nt" else "clear")
     
     def display_menu(self):
         self.console.print("""
@@ -51,8 +54,10 @@ class FileHacking:
         elif option == "10":
             self.console.print("[bold cyan]You selected: Malicious File Creation[/bold cyan]")
         elif option == "0":
+            self._clear_screen()
             return False
         else:
+            self._clear_screen()
             self.console.print("[bold red]Invalid option. Please try again.[/bold red]")
         return True
     
@@ -63,6 +68,7 @@ class FileHacking:
             self.display_menu()
             choice = Prompt.ask("[bold yellow]Enter your choice[/bold yellow] [bold cyan](0-10)[/bold cyan]")
             if choice not in valid_options:
+                self._clear_screen()
                 self.console.print("[bold red]Invalid input! Please enter a number from 0 to 10.[/bold red]")
                 continue
             running = self.handle_option(choice)

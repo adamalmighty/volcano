@@ -1,74 +1,62 @@
-[Volcano]
+# Volcano
 
-Volcano is a Python-based penetration testing tool designed to help security professionals assess and test system vulnerabilities. Built with a focus on speed and modularity, Volcano is tailored for Arch Linux. Some features may not work correctly on other Linux distributions, Windows, or macOS.
+Volcano is a Python and C-based penetration testing tool designed to assist security professionals in evaluating and exploiting system vulnerabilities. Emphasizing speed, modularity, and extensibility, Volcano supports multiple operating systems for broad compatibility. While optimized for Arch Linux, it functions effectively across various Linux distributions and other platforms.
 
-Note: This project is currently under development.
+**Note:** This project is actively under development.
 
-[Features]
 
-Modular penetration testing toolkit
+## Features
 
-Optimized for Arch Linux environments
+- Modular penetration testing toolkit  
+- Platform-independent design  
+- Developed with Python and C for performance and flexibility  
+- Includes trusted third-party modules to enhance capabilities  
+- Command-line interface with extensible framework for adding new testing modules  
 
-Command-line interface
 
-Extensible framework for new testing modules
+## Requirements
 
-[Requirements]
+- OS - Linux/Windows/MacOS
+- Python 3.7 or higher  
+- Required dependencies listed in `requirements.txt`  
 
-Arch Linux
 
-Python 3.7 or higher
-
-[Installation]
+## Installation
 
 Clone the repository:
 
-bash:-
-
 git clone https://github.com/adamalmighty/volcano.git
-
 cd volcano
 
 Install dependencies:
 
-bash:-
-
 pip install -r requirements.txt
 
-[Usage]
 
-Run the tool:
+## Usage
 
-bash:-
+Run the tool:  
 
 ./app.py
 
-or
+or  
 
 python app.py
 
-Note: On most systems, you may need to make app.py executable first:
-
-bash:-
+*Note:* On some systems, you may need to make `app.py` executable first:  
 
 chmod +x app.py
 
-[Compatibility]
 
-Fully supported: Arch Linux
+## License
 
-Partial support: Other Linux distributions (some features may not work)
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-Not supported: Windows, macOS
 
-[License]
+## Disclaimer
 
-This project is licensed under the MIT License. See LICENSE for details.
+This tool is intended solely for educational and authorized penetration testing purposes. Unauthorized use on systems without explicit permission is strictly prohibited.
 
-[Disclaimer]
 
-This tool is intended for educational and authorized penetration testing purposes only. Unauthorized use on systems you do not own or have explicit permission to test is strictly prohibited.
-
-**Note:** This project is currently *under development* and may not be fully functional.
+**Note:** This project is currently *under development* and may not be fully operational.  
 ![Under Development](https://img.shields.io/badge/status-under%20development-red)
